@@ -1,28 +1,8 @@
 const fs = require('fs/promises');
 const path = require("path");
 const { v4: uuidv4 } = require('uuid');
-// console.log(uuid)
-
-// const contactsPath = `${__dirname}/db/contacts.json`;
 
 const contactsPath = path.join(__dirname, "db/contacts.json");
-// console.log(__dirname)
-/*
- * Раскомментируй и запиши значение
- * const contactsPath = ;
- */
-
-// // TODO: задокументировать каждую функцию
-
-  
-// 
-  
-//   function removeContact(contactId) {
-//     // ...твой код
-//   }
-  
-//
-
 
 async function listContacts() {
     const contactsList = await fs.readFile(contactsPath);
